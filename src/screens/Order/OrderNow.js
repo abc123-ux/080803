@@ -147,7 +147,7 @@ const OrderNow = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
+    padding: 15,
   },
   userDetails: {
     backgroundColor: '#f0f0f0',
