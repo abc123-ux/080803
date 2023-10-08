@@ -1,13 +1,13 @@
 export const categories = [
   {
     id: 3,
-    name: 'Cookies',
+    name: 'Cook',
     photo_url:
     'https://www.telegraph.co.uk/content/dam/Travel/2019/January/france-food.jpg?imwidth=1400'
   },
   {
     id: 1,
-    name: 'Mexican Food',
+    name: 'Food',
     photo_url: 'https://ak1.picdn.net/shutterstock/videos/19498861/thumb/1.jpg'
   },
   {

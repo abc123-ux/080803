@@ -33,6 +33,14 @@ export default function DrawerContainer(props) {
             navigation.closeDrawer();
           }}
         />
+        <MenuButton
+          title="TRACK YOUR ORDER"
+          source={require("../../../assets/icons/search.png")}
+          onPress={() => {
+            navigation.navigate("Track");
+            navigation.closeDrawer();
+          }}
+          />
       </View>
     </View>
   );
