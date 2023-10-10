@@ -28,6 +28,23 @@ export const categories = [
       photo_url: 'https://amp.businessinsider.com/images/5c084bf7bde70f4ea53f0436-750-563.jpg'
     },
   ];
+
+  export const data =[
+    {
+      orderNumber: "ORD001",
+      status: "Processing",
+      orderDate: "2023-01-15",
+      deliveryAddress: "123 Main St, City, Country"
+    },
+    {
+      orderNumber: "ORD002",
+      status: "Shipped",
+      orderDate: "2023-02-05",
+      deliveryAddress: "456 Elm St, Town, Country",
+      // Add more order-related information here
+    }
+
+  ];
   
   export const users =[
   {
