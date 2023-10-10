@@ -23,7 +23,7 @@ export default function SignIn(props) {
 
   const  Home= () => {
         // Navigate to the OrderPage screen
-        navigation.navigate('HomeScreen');
+        navigation.navigate('Home');
       };
 
   return (

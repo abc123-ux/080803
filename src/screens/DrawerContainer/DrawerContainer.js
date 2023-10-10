@@ -37,7 +37,15 @@ export default function DrawerContainer(props) {
           title="TRACK YOUR ORDER"
           source={require("../../../assets/icons/search.png")}
           onPress={() => {
-            navigation.navigate("Track");
+            navigation.navigate("TrackOrder");
+            navigation.closeDrawer();
+          }}
+          />
+          <MenuButton
+          title="CREATE PROFILE"
+          source={require("../../../assets/icons/search.png")}
+          onPress={() => {
+            navigation.navigate("CreateProfile");
             navigation.closeDrawer();
           }}
           />

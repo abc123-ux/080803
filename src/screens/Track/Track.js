@@ -1,13 +1,11 @@
 import React, { useLayoutEffect } from "react";
 import { FlatList, Text, View, TouchableHighlight } from "react-native";
 import styles from "./styles"; // Import the styles file
-import { getOrders } from "../Orderdata/Orderdata"; // Replace with your order data source
+import { data } from "../../data/dataArrays"; // Replace with your order data source
 
-export default function TrackOrderScreen(props) {
-  const { navigation, route } = props;
-
+export default function TrackOrderScreen({ navigation }) {
   // Replace this with your order data retrieval logic
-  const ordersArray = getOrders();
+  const ordersArray = data;
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -18,6 +16,7 @@ export default function TrackOrderScreen(props) {
 
   const onPressOrder = (item) => {
     // Add navigation logic for viewing details of the selected order
+    navigation.navigate("OrderDetails", { order: item });
   };
 
   const renderOrders = ({ item }) => (

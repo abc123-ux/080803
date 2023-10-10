@@ -13,7 +13,7 @@ import IngredientsDetailsScreen from '../screens/IngredientsDetails/IngredientsD
 import ProfilePage from '../screens/Home/Profile';
 import SignIn from '../screens/Home/SignIn';
 import OrderPage from '../screens/Order/OrderNow';
-import TrackOrderScreen from '../screens/Track/Track';
+import Track from '../screens/Track/Track';
 
  const Stack = createStackNavigator();
 
@@ -29,10 +29,10 @@ function MainNavigator() {
           }
       }}
     >
-
+      <Stack.Screen name='Home' component={HomeScreen}/>
       <Stack.Screen name='CreateProfile' component={ProfilePage}/>
       <Stack.Screen name='SignIn' component={SignIn}/>
-      <Stack.Screen name='Home' component={HomeScreen}/>
+      
       <Stack.Screen name='OrderNow' component={OrderPage}/>
       <Stack.Screen name='Categories' component={CategoriesScreen}/>
       <Stack.Screen name='Recipe' component={RecipeScreen}/>
@@ -40,10 +40,7 @@ function MainNavigator() {
       <Stack.Screen name='Ingredient' component={IngredientScreen} />
       <Stack.Screen name='Search' component={SearchScreen} />
       <Stack.Screen name='IngredientsDetails' component={IngredientsDetailsScreen} />
-      <Stack.Screen name='TrackOrder' component={TrackOrderScreen} />
-     
-
-
+      <Stack.Screen name='TrackOrder' component={Track} />
     </Stack.Navigator>
   )
 }
